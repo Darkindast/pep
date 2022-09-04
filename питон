@@ -4,8 +4,8 @@ def palindrom(n):
         s = s + str(n % 10)
         n //= 10 
     return int(s)
-d = int(input())
-k = int(input())
+
+d,k = map(int, input().split())
 for i in range(k):
     f = palindrom(d)
     r = palindrom(f)
