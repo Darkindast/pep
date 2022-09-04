@@ -7,7 +7,6 @@ def palindrom(n):
 d = int(input())
 k = int(input())
 for i in range(k):
-    
     f = palindrom(d)
     r = palindrom(f)
     d = f + r 
