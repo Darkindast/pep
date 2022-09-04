@@ -1,0 +1,14 @@
+def palindrom(n):
+    s =''
+    while n > 0:
+        s = s + str(n % 10)
+        n //= 10 
+    return int(s)
+d = int(input())
+k = int(input())
+for i in range(k):
+    
+    f = palindrom(d)
+    r = palindrom(f)
+    d = f + r 
+print(d)
