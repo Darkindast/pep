@@ -5,9 +5,9 @@ def palindrom(n):
         n //= 10 
     return int(s)
 
-d,k = map(int, input().split())
-for i in range(k):
-    f = palindrom(d)
+ch = int(input())
+while ch != palindrom(ch):
+    f = palindrom(ch)
     r = palindrom(f)
-    d = f + r 
-print(d)
+    ch = f + r 
+print(ch)
